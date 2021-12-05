@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+</head>
+<body>
+
+<form action="https://phpstudyonline.ru/member/lessons_data/php/show_request_paremeters.php" method="post">
+
+    <p>Имя</p>
+    <input type="text" name="firstname">
+
+    <p>Пол</p>
+    <label><input type="radio" name="gender" value="male"> Мужской</label>
+    <label><input type="radio" name="gender" value="female" checked> Женский</label>
+
+
+    <p>Увлечения</p>
+    <label><input type="checkbox" name="hobbies[]" value="painting"> Рисование</label>
+    <label><input type="checkbox" name="hobbies[]" value="sport">Спорт</label>
+    <label><input type="checkbox" name="hobbies[]" value="gaming" checked> Игры</label>
+
+    <select name="hero">
+        <option value="Чебурашка">Чебурашка</option>
+        <option value="Крокодил Гена">Крокодил Гена</option>
+        <option selected value="Шапокляк">Шапокляк</option>
+        <option value="Крыса Лариса">Крыса Лариса</option>
+    </select>
+
+    <textarea cols="50" name="message" rows="15"></textarea>
+
+    <input type="password" name="userpassword">
+
+    <input type="email" name="email" placeholder="Ваш Email">
+
+    <p>Телефон в формате 7-xxx-xxx-xx-xx: <input name="tel" pattern="7-[0-9]{3}-[0-9]{3}-[0-9]{2}-[0-9]{2}" type="tel" /></p>
+
+    <input type="submit" value="Отправить">
+
+</form>
+
+</body>
+</html>
